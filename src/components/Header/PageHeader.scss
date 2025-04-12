@@ -48,12 +48,23 @@
 
     &__button
     {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       cursor: pointer;
+      border-radius: 1rem;
       color: $white;
       background-color: $primaryColor;
       font-weight: 700;
       border: none;
-      padding: 0.8rem;
+      padding: 1rem;
+
+      &__cart
+      {
+        width: 1.5rem;
+        margin-right: 0.5rem;
+      }
+
     }
 
   }

@@ -17,7 +17,10 @@
         fuga omnis, iure molestias optio tempore sint at ipsa dolorum odio exercitationem eos inventore odit.
       </p>
       <p class="header__content--title">$399</p>
-      <button type="button" class="header__content__button">Agregar al Carrito</button>
+      <div class="header__content__button">
+        <img class="header__content__button__cart" src="/public/icons/cart.png"  type="image/png" alt="" />
+        <span>Agregar al Carrito</span>
+      </div>
     </div>
   </header>
 </template>
