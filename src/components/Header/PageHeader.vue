@@ -11,15 +11,15 @@
       </a>
     </div>
     <div class="header__content">
-      <h1 class="header__content--title">Modelo VAI</h1>
+      <h1 class="header__content--title">Guitar course</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, possimus quibusdam dolor nemo velit quo,
         fuga omnis, iure molestias optio tempore sint at ipsa dolorum odio exercitationem eos inventore odit.
       </p>
       <p class="header__content--title">$399</p>
       <div class="header__content__button">
-        <img class="header__content__button__cart" src="/public/icons/cart.png"  type="image/png" alt="" />
-        <span>Agregar al Carrito</span>
+        <img class="header__content__button__contact" src="/public/icons/contact.svg"  type="image/svg+xml" alt="" />
+        <span>Contact now</span>
       </div>
     </div>
   </header>
