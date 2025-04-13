@@ -8,17 +8,18 @@ const props = defineProps({
       type: String,
       default: 'button'
     },
+    onClick: Function,
   })
 
-  const emit = defineEmits(['click'])
 
   const isLink = computed(() => !!props.href)
   const tag = computed(() => (isLink.value ? 'a' : 'button'))
 
-  function handleClick(event : MouseEvent)
+  function handleClick()
   {
-    if (!isLink.value) {
-      emit('click', event)
+    if (!isLink.value && props.onClick)
+    {
+       props.onClick()
     }
   }
 
