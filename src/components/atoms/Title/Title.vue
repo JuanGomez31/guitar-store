@@ -1,19 +1,30 @@
-<script setup lang="ts">
-import {computed} from 'vue'
+<script lang="ts">
+import {computed, defineComponent} from 'vue'
 
-const props = defineProps({
+const SECURED_LEVELS = [1, 2, 3, 4, 5, 6]
+
+export default defineComponent({
+  props: {
     level: {
       type: Number,
       default: 1,
-      validator: (value : number) => [1, 2, 3, 4, 5, 6].includes(value),
+      validator: (value: number) => SECURED_LEVELS.includes(value),
     },
     cssClass: {
       type: String,
       default: '',
     }
-  })
-
-  const tag = computed(() => `h${props.level}`)
+  },
+  setup(props) {
+    const tag = computed(() => {
+      const level = SECURED_LEVELS.includes(props.level) ? props.level : 1
+      return `h${level}`
+    })
+    return {
+      tag
+    }
+  }
+})
 
 </script>
 
