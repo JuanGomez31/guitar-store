@@ -1,0 +1,31 @@
+@use "@assets/variables" as *;
+
+.button
+{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 1rem;
+  border: none;
+  font-size: 1rem;
+  padding: 1rem;
+
+  &--primary
+  {
+    background-color: $primaryColor;
+    font-weight: 700;
+    color: $white;
+  }
+
+}
+
+
+@media (min-width: 1200px)
+{
+  .button
+  {
+    font-size: 1.25rem;
+  }
+}

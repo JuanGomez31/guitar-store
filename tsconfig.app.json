@@ -5,7 +5,9 @@
     "baseUrl": "./src",
     "paths": {
       "@pages/*": ["pages/*"],
-      "@assets/*": ["assets/*"]
+      "@assets/*": ["assets/*"],
+      "@components/*": ["components/*"],
+      "@shared/*": ["shared/*"]
     },
     "strict": true,
     "noUnusedLocals": true,
