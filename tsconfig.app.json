@@ -6,7 +6,9 @@
     "paths": {
       "@pages/*": ["pages/*"],
       "@assets/*": ["assets/*"],
-      "@components/*": ["components/*"]
+      "@components/*": ["components/*"],
+      "@data/*": ["data/*"],
+      "@entities/*": ["entities/*"]
     },
     "types": ["vitest/globals","@testing-library/jest-dom"],
     "strict": true,

@@ -11,12 +11,17 @@
   border: none;
   font-size: 1rem;
   padding: 1rem;
+  font-weight: 700;
+  color: $white;
 
   &--primary
   {
     background-color: $primaryColor;
-    font-weight: 700;
-    color: $white;
+  }
+
+  &--secondary
+  {
+    background-color: $black;
   }
 
 }

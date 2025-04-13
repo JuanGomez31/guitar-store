@@ -3,22 +3,37 @@
 .title
 {
   margin: 0 0 1rem;
+  font-weight: 700;
 
   &--big
   {
     font-size: 2rem;
   }
 
+  &--medium
+  {
+    font-size: 1.5rem;
+  }
+
 
   &--primary
   {
     color: $primaryColor;
-    font-weight: 700;
+  }
+
+  &--secondary
+  {
+    color: $black;
   }
 
   &--upper
   {
     text-transform: uppercase;
+  }
+
+  &--center
+  {
+    text-align: center;
   }
 
 }
