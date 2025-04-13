@@ -22,3 +22,17 @@
   }
 
 }
+
+@media (min-width: 1200px)
+{
+  .title
+  {
+
+    &--big
+    {
+      font-size: 4.5rem;
+    }
+
+  }
+
+}
