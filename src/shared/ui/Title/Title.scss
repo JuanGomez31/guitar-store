@@ -1,0 +1,24 @@
+@use "@assets/variables" as *;
+
+.title
+{
+  margin: 0 0 1rem;
+
+  &--big
+  {
+    font-size: 2rem;
+  }
+
+
+  &--primary
+  {
+    color: $primaryColor;
+    font-weight: 700;
+  }
+
+  &--upper
+  {
+    text-transform: uppercase;
+  }
+
+}
