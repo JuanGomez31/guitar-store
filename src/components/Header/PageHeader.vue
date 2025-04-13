@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import Title from "@shared/ui/Title/Title.vue";
+import Button from "@shared/ui/Button/Button.vue";
+import SvgIcon from "@shared/ui/Icon/SvgIcon.vue";
 </script>
 
 <template>
@@ -16,10 +18,10 @@ import Title from "@shared/ui/Title/Title.vue";
         fuga omnis, iure molestias optio tempore sint at ipsa dolorum odio exercitationem eos inventore odit.
       </p>
       <Title :level="2" :cssClass="'title--primary title--big'">$399</Title>
-      <a href="tel:+34000000000" class="header__content__button">
-        <img class="header__content__button__contact" src="/public/icons/contact.svg"  type="image/svg+xml" alt="" />
+      <Button href="tel:+34000000000" class-list="button--primary">
+        <SvgIcon name="contact" alt="Contact now icon" />
         <span>Contact now</span>
-      </a>
+      </Button>
     </div>
   </header>
 </template>

@@ -1,0 +1,21 @@
+@use "@assets/variables" as *;
+
+.button
+{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 1rem;
+  border: none;
+  padding: 1rem;
+
+  &--primary
+  {
+    background-color: $primaryColor;
+    font-weight: 700;
+    color: $white;
+  }
+
+}

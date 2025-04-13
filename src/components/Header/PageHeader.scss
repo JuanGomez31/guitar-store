@@ -37,29 +37,6 @@
     text-align: center;
     padding: 1rem;
     font-size: 1.2rem;
-
-    &__button
-    {
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      border-radius: 1rem;
-      color: $white;
-      background-color: $primaryColor;
-      font-weight: 700;
-      border: none;
-      padding: 1rem;
-
-      &__contact
-      {
-        width: 1.5rem;
-        margin-right: 0.5rem;
-      }
-
-    }
-
   }
 
 
