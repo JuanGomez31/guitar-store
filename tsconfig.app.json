@@ -6,8 +6,7 @@
     "paths": {
       "@pages/*": ["pages/*"],
       "@assets/*": ["assets/*"],
-      "@components/*": ["components/*"],
-      "@shared/*": ["shared/*"]
+      "@components/*": ["components/*"]
     },
     "strict": true,
     "noUnusedLocals": true,

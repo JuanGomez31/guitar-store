@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import Title from "@shared/ui/Title/Title.vue";
-import Button from "@shared/ui/Button/Button.vue";
-import SvgIcon from "@shared/ui/Icon/SvgIcon.vue";
+import Title from "@components/atoms/Title/Title.vue";
+import Button from "@components/atoms/Button/Button.vue";
+import SvgIcon from "@components/atoms/Icon/SvgIcon.vue";
 </script>
 
 <template>
@@ -9,7 +9,7 @@ import SvgIcon from "@shared/ui/Icon/SvgIcon.vue";
     <div class="header__container">
       <div class="header__nav">
         <a href="/">
-          <img class="header__nav__logo" src="/public/icons/logo.svg" type="image/svg+xml" alt="">
+          <img class="header__nav__logo" src="/icons/logo.svg" type="image/svg+xml" alt="">
         </a>
       </div>
       <div class="header__content">
@@ -25,7 +25,7 @@ import SvgIcon from "@shared/ui/Icon/SvgIcon.vue";
         </Button>
       </div>
     </div>
-    <img class="header__guitar" src="/public/img/header_guitar.png" alt=""></img>
+    <img class="header__guitar" src="/img/header_guitar.png" alt=""></img>
   </header>
 </template>
 
