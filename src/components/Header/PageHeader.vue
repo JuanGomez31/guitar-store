@@ -17,10 +17,10 @@
         fuga omnis, iure molestias optio tempore sint at ipsa dolorum odio exercitationem eos inventore odit.
       </p>
       <p class="header__content--title">$399</p>
-      <div class="header__content__button">
+      <a href="tel:+34000000000" class="header__content__button">
         <img class="header__content__button__contact" src="/public/icons/contact.svg"  type="image/svg+xml" alt="" />
         <span>Contact now</span>
-      </div>
+      </a>
     </div>
   </header>
 </template>
