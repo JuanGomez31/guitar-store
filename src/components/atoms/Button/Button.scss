@@ -13,6 +13,8 @@
   padding: 1rem;
   font-weight: 700;
   color: $white;
+  transition: color 0.15s ease-in-out,
+  background-color 0.15s ease-in-out;
 
   &--normal
   {
@@ -22,16 +24,47 @@
   &--primary
   {
     background-color: $primaryColor;
+
+    &:hover
+    {
+      background-color: $primaryColor-hover;
+    }
+
+
   }
 
   &--secondary
   {
     background-color: $secondaryColor;
+
+    &:hover
+    {
+      background-color: $secondaryColor-hover;
+    }
+
+  }
+
+  &--red
+  {
+    background-color: $red;
+
+    &:hover
+    {
+      background-color: $red-hover;
+    }
+
   }
 
   &--circle
   {
     border-radius: 50%;
+  }
+
+
+  &--small
+  {
+    font-size: 0.8rem;
+    padding: 0.5rem;
   }
 
 }
