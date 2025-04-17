@@ -7,7 +7,7 @@ import SvgIcon from "@components/atoms/Icon/SvgIcon.vue";
 <template>
   <footer class="footer">
   <Button class-list="button--normal" href="https://github.com/JuanGomez31/guitar-store">
-    <SvgIcon name="circle-top-up" alt="Circle-top-up" />
+    <SvgIcon name="circle-top-up" alt="Link icon" />
     <span>See code in GitHub</span>
   </Button>
   </footer>

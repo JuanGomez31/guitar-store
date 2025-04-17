@@ -10,7 +10,7 @@
 <script setup lang="ts">
   const props = defineProps<{
     name: string
-    alt?: string
+    alt: string
   }>()
 </script>
 
