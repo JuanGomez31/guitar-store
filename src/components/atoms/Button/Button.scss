@@ -14,6 +14,11 @@
   font-weight: 700;
   color: $white;
 
+  &--normal
+  {
+    font-weight: normal;
+  }
+
   &--primary
   {
     background-color: $primaryColor;
@@ -21,7 +26,7 @@
 
   &--secondary
   {
-    background-color: $black;
+    background-color: $secondaryColor;
   }
 
   &--circle
