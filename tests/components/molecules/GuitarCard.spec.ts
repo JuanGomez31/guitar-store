@@ -1,6 +1,6 @@
 import {describe, expect, it, vi} from 'vitest';
 import {mount} from '@vue/test-utils';
-import GuitarCard from '@components/organism/Guitar/GuitarCard.vue';
+import GuitarCard from '@components/molecules/GuitarCard/GuitarCard.vue';
 import {GUITAR_MOCK} from "../../mocks/GuitarMock.ts";
 
 describe('GuitarCard Organism Tests', () => {

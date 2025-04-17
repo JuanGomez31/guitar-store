@@ -1,10 +1,13 @@
 <script setup lang="ts">
 import PageHeader from "@components/organism/Header/PageHeader.vue";
 import PageContent from "@components/organism/Content/PageContent.vue";
+import {useCartStore} from "@stores/cart.store.ts";
+import FloatingCardButton from "@components/molecules/CardButton/FloatingCardButton.vue";
 
-function onClick(id: number)
-{
-  console.log(id);
+const cartStore = useCartStore();
+
+function onClick() {
+  console.log("Pending function");
 }
 
 </script>
@@ -12,5 +15,6 @@ function onClick(id: number)
 
 <template>
   <PageHeader/>
-  <PageContent :on-click="onClick" />
+  <PageContent :on-click="cartStore.addItem" />
+  <FloatingCardButton :total-items="cartStore.totalItems" :on-click="onClick" />
 </template>

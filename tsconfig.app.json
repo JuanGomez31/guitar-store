@@ -4,11 +4,12 @@
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
     "baseUrl": "./src",
     "paths": {
-      "@pages/*": ["pages/*"],
       "@assets/*": ["assets/*"],
       "@components/*": ["components/*"],
       "@data/*": ["data/*"],
-      "@entities/*": ["entities/*"]
+      "@entities/*": ["entities/*"],
+      "@pages/*": ["pages/*"],
+      "@stores/*": ["stores/*"],
     },
     "types": ["vitest/globals","@testing-library/jest-dom"],
     "strict": true,

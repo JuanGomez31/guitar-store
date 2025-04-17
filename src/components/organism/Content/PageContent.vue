@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Title from "@components/atoms/Title/Title.vue";
 import {guitarsData} from "@entities/guitar/guitar.service.ts"
-import GuitarCard from "@components/organism/Guitar/GuitarCard.vue";
+import GuitarCard from "@components/molecules/GuitarCard/GuitarCard.vue";
 
 const props = defineProps<{
     onClick: (id: number) => void;

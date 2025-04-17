@@ -24,13 +24,17 @@
     background-color: $black;
   }
 
+  &--circle
+  {
+    border-radius: 50%;
+  }
+
 }
 
-
-@media (min-width: 1200px)
+@media (min-width: 650px)
 {
   .button
   {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
   }
 }
