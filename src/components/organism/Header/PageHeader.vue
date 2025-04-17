@@ -2,6 +2,7 @@
 import Title from "@components/atoms/Title/Title.vue";
 import Button from "@components/atoms/Button/Button.vue";
 import SvgIcon from "@components/atoms/Icon/SvgIcon.vue";
+import Remark from "@components/atoms/Remark/Remark.vue";
 </script>
 
 <template>
@@ -18,7 +19,7 @@ import SvgIcon from "@components/atoms/Icon/SvgIcon.vue";
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, possimus quibusdam dolor nemo velit quo,
           fuga omnis, iure molestias optio tempore sint at ipsa dolorum odio exercitationem eos inventore odit.
         </p>
-        <Title :level="2" :cssClass="'title--primary title--big'">$399</Title>
+        <Remark :cssClass="'remark--primary remark--big'">$399</Remark>
         <Button href="tel:+34000000000" class-list="button--primary">
           <SvgIcon name="contact" alt="Contact now icon" />
           <span>Contact now</span>

@@ -19,15 +19,9 @@
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
-        justify-content: space-between;
-        align-content: space-between;
+        justify-content: space-around;
+        align-items: stretch;
         text-align: left;
-    }
-
-    &__price {
-        color: $primaryColor;
-        font-size: 1.2rem;
-        font-weight: 700;
     }
 
 }
@@ -37,6 +31,7 @@
     .guitar_card
     {
         flex-direction: row;
+
     }
 }
 

@@ -23,6 +23,8 @@
     &__guitars_container
     {
       flex-direction: row;
+      justify-content: space-around;
+      align-items: stretch;
     }
 
   }

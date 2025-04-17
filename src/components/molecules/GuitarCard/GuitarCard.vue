@@ -3,6 +3,7 @@ import type {Guitar} from "@entities/guitar/guitar.model.ts";
 import Title from "@components/atoms/Title/Title.vue";
 import Button from "@components/atoms/Button/Button.vue";
 import SvgIcon from "@components/atoms/Icon/SvgIcon.vue";
+import Remark from "@components/atoms/Remark/Remark.vue";
 
 const props = defineProps<{
     onClick: (id: number) => void;
@@ -19,7 +20,7 @@ const props = defineProps<{
         {{props.guitar.name}}
       </Title>
       <p>{{guitar.description}}</p>
-      <p class="guitar_card__price">${{props.guitar.price}}</p>
+      <Remark class="remark--primary remark--medium">${{props.guitar.price}}</Remark>
       <Button :on-click="() => props.onClick(props.guitar.id)" class-list="button--secondary">
         <SvgIcon name="cart" alt="Add to cart icon" />
         <span>Add to cart</span>
