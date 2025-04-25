@@ -32,4 +32,78 @@ describe('useCartStore', () =>
         expect(cart.totalItems).toBe(2);
     });
 
+    test('remove quantity if item exits', () => {
+        const store = useCartStore()
+        store.addItem(1)
+        store.addItem(1)
+        expect(store.items[1]).toBe(2)
+        store.removeItem(1)
+        expect(store.items[1]).toBe(1)
+    })
+
+    test('remove quantity delete if final quantity is zero', () => {
+        const store = useCartStore()
+        store.addItem(1)
+        expect(store.items[1]).toBe(1)
+        store.removeItem(1)
+        expect(store.items[1]).toBeUndefined()
+    })
+
+    test('deleteItem should remove product from items lists', () => {
+        const store = useCartStore()
+        store.addItem(1)
+        store.addItem(1)
+        expect(store.items[1]).toBe(2)
+        store.deleteItem(1)
+        expect(store.items[1]).toBeUndefined()
+    })
+
+    test('clear cart should remove all products from cart', () => {
+        const store = useCartStore()
+        store.addItem(1)
+        store.addItem(2)
+        store.addItem(3)
+        expect(store.totalItems).toBe(3)
+        store.clearCart()
+        expect(store.totalItems).toBe(0)
+    })
+
+    test('toggle cart should change opened status', () => {
+        const store = useCartStore()
+        expect(store.cartOpened).toBe(false)
+        store.toggleCart()
+        expect(store.cartOpened).toBe(true)
+        store.toggleCart()
+        expect(store.cartOpened).toBe(false)
+    })
+
+    test('cart should be autoclosed if is empty on clear', () => {
+        const store = useCartStore()
+        store.addItem(1)
+        store.toggleCart()
+        expect(store.cartOpened).toBe(true)
+        store.clearCart()
+        expect(store.cartOpened).toBe(false)
+    })
+
+
+    test('cart should be autoclosed if is empty on deleteItem', () => {
+        const store = useCartStore()
+        store.addItem(1)
+        store.toggleCart()
+        expect(store.cartOpened).toBe(true)
+        store.deleteItem(1)
+        expect(store.cartOpened).toBe(false)
+    })
+
+
+    test('cart should be autoclosed if is empty on removeItem', () => {
+        const store = useCartStore()
+        store.addItem(1)
+        store.toggleCart()
+        expect(store.cartOpened).toBe(true)
+        store.deleteItem(1)
+        expect(store.cartOpened).toBe(false)
+    })
+
 });

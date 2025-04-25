@@ -7,9 +7,6 @@ import PageFooter from "@components/organism/Footer/PageFooter.vue";
 
 const cartStore = useCartStore();
 
-function onClick() {
-  console.log("Pending function");
-}
 
 </script>
 
@@ -18,5 +15,5 @@ function onClick() {
   <PageHeader/>
   <PageContent :on-click="cartStore.addItem" />
   <PageFooter/>
-  <FloatingCardButton :total-items="cartStore.totalItems" :on-click="onClick" />
+  <FloatingCardButton :total-items="cartStore.totalItems" :on-click="cartStore.toggleCart" />
 </template>
