@@ -3,7 +3,7 @@ import {mount} from '@vue/test-utils';
 import GuitarCard from '@components/molecules/GuitarCard/GuitarCard.vue';
 import {GUITAR_MOCK} from "../../mocks/GuitarMock.ts";
 
-describe('GuitarCard Organism Tests', () => {
+describe('GuitarCard Tests', () => {
 
     const mockOnClick = vi.fn();
 
