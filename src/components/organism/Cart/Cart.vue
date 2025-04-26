@@ -57,39 +57,40 @@ const cartStore = useCartStore();
       <Title :level="2" cssClass="title--primary title--medium title--center">Cart</Title>
       <table class="popup__table">
         <thead>
-        <tr>
-          <th>Image</th>
-          <th>Name</th>
-          <th>Price</th>
-          <th>Quantity</th>
-        </tr>
+          <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Actions</th>
+          </tr>
         </thead>
         <tbody>
-        <tr v-for="product in cartProducts" :key="product.product.id">
-          <td>
-            <img class="popup__img" :src="`/img/guitars/${product.product.image}.jpg`" alt="Test" />
-          </td>
-          <td>
-            {{ product.product.name }}
-          </td>
-          <td>
-            ${{ product.product.price }}
-          </td>
-          <td>
-            <Stepper :id="`${product.product.id}`"
-                     :on-add="handleAdd(product.product.id)"
-                     :on-remove="handleRemove(product.product.id)"
-                     :start-qty="product.quantity" />
-          </td>
-          <td>
-            <Button
-                :id="`delete-item-button-${product.product.id}`"
-                :on-click="handleDelete(product.product.id)"
-                class-list="button--circle button--red button--small">
-              <SvgIcon class="icon--no-margin" name="trash" alt="Trash icon" />
-            </Button>
-          </td>
-        </tr>
+          <tr v-for="product in cartProducts" :key="product.product.id">
+            <td>
+              <img class="popup__img" :src="`/img/guitars/${product.product.image}.jpg`" alt="Test" />
+            </td>
+            <td>
+              {{ product.product.name }}
+            </td>
+            <td>
+              ${{ product.product.price }}
+            </td>
+            <td>
+              <Stepper :id="`${product.product.id}`"
+                       :on-add="handleAdd(product.product.id)"
+                       :on-remove="handleRemove(product.product.id)"
+                       :start-qty="product.quantity" />
+            </td>
+            <td>
+              <Button
+                  :id="`delete-item-button-${product.product.id}`"
+                  :on-click="handleDelete(product.product.id)"
+                  class-list="button--circle button--red button--small">
+                <SvgIcon class="icon--no-margin" name="trash" alt="Trash icon" />
+              </Button>
+            </td>
+          </tr>
         </tbody>
       </table>
       <div class="popup__footer">

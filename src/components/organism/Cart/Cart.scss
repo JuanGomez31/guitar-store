@@ -100,3 +100,24 @@
 
 
 }
+
+
+@media (min-width: 650px)
+{
+  .popup
+  {
+    &__table {
+      max-height: 40vh;
+    }
+  }
+}
+
+@media (min-width: 1200px)
+{
+  .popup
+  {
+    &__table {
+      max-height: 50vh;
+    }
+  }
+}
