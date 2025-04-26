@@ -44,6 +44,14 @@ export const useCartStore = defineStore('cartStore', () => {
 
     const toggleCart = () => {
         cartOpened.value = !cartOpened.value;
+        if (cartOpened.value)
+        {
+            document.body.style.overflow = 'hidden';
+        }
+        else
+        {
+            document.body.style.overflow = 'auto';
+        }
     }
 
     const checkCartState = () => {
