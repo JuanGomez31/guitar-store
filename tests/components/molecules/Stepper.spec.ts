@@ -12,9 +12,11 @@ describe('Stepper test', () => {
                 startQty: qty,
                 onAdd: vi.fn(),
                 onRemove: vi.fn(),
+                id: 'test'
             }
         });
-        expect(wrapper.text()).toContain(qty.toString());
+        const textElement = wrapper.find('#stepper-qty-test');
+        expect(textElement.text()).toBe(qty.toString());
     });
 
 
@@ -25,9 +27,12 @@ describe('Stepper test', () => {
                 startQty: 1,
                 onAdd,
                 onRemove: vi.fn(),
+                id: 'test'
             }
         });
-        await wrapper.findAll('button')[1].trigger('click');
+        const button = wrapper.find('#stepper-add-button-test');
+        expect(button.exists()).toBe(true);
+        await button.trigger('click');
         expect(onAdd).toHaveBeenCalled();
     });
 
@@ -38,10 +43,13 @@ describe('Stepper test', () => {
             props: {
                 startQty: 1,
                 onAdd: vi.fn(),
-                onRemove
+                onRemove,
+                id: 'test'
             }
         });
-        await wrapper.findAll('button')[0].trigger('click');
+        const button = wrapper.find('#stepper-remove-button-test');
+        expect(button.exists()).toBe(true);
+        await button.trigger('click');
         expect(onRemove).toHaveBeenCalled();
     });
 

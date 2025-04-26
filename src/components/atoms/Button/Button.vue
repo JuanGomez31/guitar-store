@@ -9,6 +9,7 @@ const props = defineProps({
       default: 'button'
     },
     onClick: Function,
+    id: String,
   })
 
 
@@ -28,6 +29,7 @@ const props = defineProps({
 <template>
   <component
       :is="tag"
+      :id="id ? props.id : undefined"
       :href="isLink ? props.href : undefined"
       :type="!isLink ? props.type : undefined"
       :class="['button', classList]"

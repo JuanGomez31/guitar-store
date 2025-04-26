@@ -1,0 +1,102 @@
+@use "@assets/variables" as *;
+
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: visible;
+  opacity: 1;
+  overflow: hidden;
+
+
+  &__header
+  {
+    align-self: end;
+  }
+
+  &__cart
+  {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      background-color: $white;
+      overflow: hidden;
+      margin: 0.5rem;
+  }
+
+  &__table {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    max-height: 35vh;
+    overflow-y: auto;
+    border-bottom: 1px solid $gray;
+    border-collapse: collapse;
+    border-spacing: 0 0.5rem;
+    text-align: center;
+
+    th {
+      padding: 0.5rem;
+      position: sticky;
+      background-color: $white;
+      top: 0;
+      z-index: 2;
+    }
+
+    td
+    {
+      padding: 0.5rem;
+    }
+
+
+
+
+    thead {
+      display: table-header-group;
+    }
+
+    tbody {
+      display: table-row-group;
+      overflow-y: scroll;
+
+      & tr:first-child {
+        border-top: 1px solid $gray;
+      }
+
+    }
+
+  }
+
+  &__img {
+    width: 4rem;
+    height: auto;
+    object-fit: contain;
+  }
+
+  &__footer
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+
+  &__total {
+    font-size: 1.2rem;
+    margin-left: auto;
+  }
+
+
+}
