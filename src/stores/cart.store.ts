@@ -18,7 +18,7 @@ export const useCartStore = defineStore('cartStore', () => {
 
     const removeItem = (id: number) => {
         let currentQty = items[id] || 0;
-        if (currentQty == 0)
+        if (currentQty == 1)
         {
             delete items[id];
             checkCartState()

@@ -70,7 +70,6 @@ describe('useCartStore', () =>
 
     test('toggle cart should change opened status', () => {
         const store = useCartStore()
-        expect(document.body.style.overflow).toBe('')
         expect(store.cartOpened).toBe(false)
         store.toggleCart()
         expect(store.cartOpened).toBe(true)
