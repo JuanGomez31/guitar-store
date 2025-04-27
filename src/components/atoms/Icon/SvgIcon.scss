@@ -1,0 +1,16 @@
+.icon
+{
+  width: 1.5rem;
+  margin-right: 0.5rem;
+
+  &--no-margin
+  {
+    margin-right: 0;
+  }
+
+  &--medium
+  {
+    width: 2rem;
+  }
+
+}

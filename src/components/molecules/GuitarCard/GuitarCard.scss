@@ -1,0 +1,47 @@
+@use "@assets/variables" as *;
+
+.guitar_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: auto;
+
+
+    &__image {
+        width: 10em;
+        height: auto;
+    }
+
+    &__content {
+        padding: 1rem;
+        height: auto;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: stretch;
+        text-align: left;
+    }
+
+}
+
+@media (min-width: 650px)
+{
+    .guitar_card
+    {
+        flex-direction: row;
+
+    }
+}
+
+@media (min-width: 1200px)
+{
+    .guitar_card
+    {
+
+        &__content {
+            max-width: 20rem;
+        }
+    }
+}
